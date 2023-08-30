@@ -34,7 +34,7 @@ class ProductManager{
     }
 
     getProducts(){
-        return this.products;
+        return console.log(this.products);
     }
 
     getProductById(idBuscado){
@@ -64,22 +64,22 @@ product.addProduct();
 
 /* validacion del funcionamiento de getProducts*/
 console.log("buscando los productos...");
-console.log(product.getProducts());
+product.getProducts()
 /* fin del funcionamiento de getProducts*/
 
 /* busqueda del producto por ID */
 // si no existe
 console.log("buscando productos que no existen...");
-console.log(product.getProductById(10));
+product.getProductById(10);
 // si existe
 console.log("buscando los productos que si existen...");
-console.log(product.getProductById(1));
-console.log(product.getProductById(3));
+product.getProductById(1);
+product.getProductById(3);
 /* fin del producto por ID */
 
 
 // se crea producto con codigo igual a un producto existente
 product.addProduct("goliat-naranja","bevida",450,"img-goliatNaranja","||| ||| |||", 100)
 // verificamos que no se haya agregado el producto con codigo de barras igual a uno existente
-console.log(product.getProducts());
+product.getProducts();
 
